@@ -8,6 +8,15 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: '480px',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
+      },
+      fontFamily: {
+        sans: 'Opensans',
+      },
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
@@ -57,15 +66,15 @@ export default {
         'Brand-blue-800': '#032333',
 
         //Brand Blue-marine Color
-        'Brand-blue-M-50': '#C2FBFF',
-        'Brand-blue-M-100': '#88E4EB',
-        'Brand-blue-M-200': '#56CED6',
-        'Brand-blue-M-300': '#2BB8C2',
-        'Brand-blue-M-400': '#07A7B2',
-        'Brand-blue-M-500': '#058F99',
-        'Brand-blue-M-600': '#02727A',
-        'Brand-blue-M-700': '#01565C',
-        'Brand-blue-M-800': '#00393D',
+        'Brand-blueM-50': '#C2FBFF',
+        'Brand-blueM-100': '#88E4EB',
+        'Brand-blueM-200': '#56CED6',
+        'Brand-blueM-300': '#2BB8C2',
+        'Brand-blueM-400': '#07A7B2',
+        'Brand-blueM-500': '#058F99',
+        'Brand-blueM-600': '#02727A',
+        'Brand-blueM-700': '#01565C',
+        'Brand-blueM-800': '#00393D',
 
         //Brand yellow Color
         'Brand-yellow-50': '#FFF6C2',

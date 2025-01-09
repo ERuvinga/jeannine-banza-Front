@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/*Include polices*/
+@layer base {
+  @font-face {
+    font-family: 'sans-extra';
+    src: url(/fonts/OpenSansExtraBold.ttf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'sans-bold';
+    src: url(/fonts/OpenSansBold.ttf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'sans-semi';
+    src: url(/fonts/OpenSansemiBold.ttf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'sans-regular';
+    src: url(/fonts/OpenSansRegular.ttf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'sans-light';
+    src: url(/fonts/OpenSansLight.ttf);
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,5 +53,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif, Arial;
 }
