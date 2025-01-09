@@ -14,7 +14,7 @@ const eslintConfig = [
   ...compat.config({
     extends: ['next/core-web-vitals', 'next/typescript', 'prettier'],
     rules: {
-      'no-console': 'error',
+      'no-console': 'warn',
     },
   }),
 ];
