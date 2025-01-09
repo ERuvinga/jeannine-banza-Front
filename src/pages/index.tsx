@@ -1,7 +1,6 @@
-'use client';
-
 import Image from 'next/image';
 import IconeComponent from '@/components/Icons';
+import { useRouter } from 'next/navigation';
 
 //Components
 import CircleDecoration from '@/components/SignIn/Decorations';
@@ -12,7 +11,9 @@ import InputField from '@/components/SignIn/InputField';
 import { InputFieldDatas } from '@/utils/constants/Types';
 import CustomButton from '@/components/SignIn/CustomButton';
 
-export default function Home() {
+const SignIn = () => {
+  //Hooks
+  const route = useRouter();
   // States
 
   // constants
@@ -28,6 +29,7 @@ export default function Home() {
         />
       ),
       handleChange: (value: string) => console.log(value),
+      protected: false,
     },
   ] as InputFieldDatas[];
 
@@ -82,10 +84,14 @@ export default function Home() {
             label='Suivant'
             bgColor='bg-main-400'
             textColor='text-Brand-neutral-50'
-            HandleClick={() => console.log('datas')}
+            HandleClick={() => {
+              console.log('go to next page');
+              route.push('/signIn');
+            }}
           />
         </section>
       </div>
     </div>
   );
-}
+};
+export default SignIn;

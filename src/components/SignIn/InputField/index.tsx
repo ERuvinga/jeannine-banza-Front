@@ -1,8 +1,12 @@
 //types aand components
 'use client';
 
+import IconeComponent from '@/components/Icons';
 import { InputFieldDatas } from '@/utils/constants/Types';
 import { useEffect, useState } from 'react';
+
+//icons
+import { FiEye, FiEyeOff } from 'react-icons/fi';
 
 interface InputDatas {
   item: InputFieldDatas;
@@ -12,6 +16,7 @@ interface InputDatas {
 // icone component provider
 const InputField = (datas: InputDatas) => {
   //State
+  const [showPwd, setshowPwd] = useState(false);
   const [platformInfos, setplatformInfos] = useState('');
   useEffect(() => {
     setplatformInfos(navigator.userAgent);
@@ -26,6 +31,7 @@ const InputField = (datas: InputDatas) => {
           {datas.item.icon}
         </div>
         <input
+          type={datas.item.protected ? (showPwd ? 'text' : 'password') : 'text'}
           onChange={(event) => datas.onchange(event.target.value)}
           className={`grow ${
             platformInfos.match(/iPhone/)
@@ -34,6 +40,26 @@ const InputField = (datas: InputDatas) => {
           } text-Brand-neutral-100 px-2 focus:outline-none bg-transparent`}
           placeholder={datas.item.placehold}
         />
+        {datas.item.protected && (
+          <div
+            onClick={() => setshowPwd((lastValue) => !lastValue)}
+            className='opacity-1 flex items-center justify-center w-[35px] h-[35px] rounded rounded-lg'
+          >
+            {showPwd ? (
+              <IconeComponent
+                icone={<FiEye />}
+                color='text-Brand-neutral-50'
+                size='15'
+              />
+            ) : (
+              <IconeComponent
+                icone={<FiEyeOff />}
+                color='text-Brand-neutral-50'
+                size='15'
+              />
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -6,4 +6,5 @@ export interface InputFieldDatas {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   icon: any;
   handleChange: (value: string) => void;
+  protected: boolean;
 }
