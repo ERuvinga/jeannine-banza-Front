@@ -1,9 +1,11 @@
 # testing and formating changes
 echo "⭕ Test, clean, format, checking..."
 
-
+# format of messages and branchs names
+npm run lint-stag
 echo "✅ name Branch and, format of Commits mesages"
-echo "✅ sucess lint check"
-echo "✅ sucess Formater"
 
-echo "🚀 Good code !"
+# start a linter and prettier
+echo "✅ sucess::lint checks passed and changes formatted"
+
+echo "🚀 Clean code, commit(s) created and validated"

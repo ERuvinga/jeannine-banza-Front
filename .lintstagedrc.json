@@ -1,4 +1,4 @@
 {
-  "*{js,ts,tsx,jsx}": "npm run lint",
-  "*": "npm run format:fix"
+  "*{js,ts,tsx,jsx}": "npm run format",
+  "*{js,ts,tsx,jsx}": "npm run lint"
 }
