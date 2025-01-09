@@ -32,14 +32,17 @@ export default function Home() {
   ] as InputFieldDatas[];
 
   return (
-    <div className='w-[100%] h-[100vh] bg-Brand-neutral-800 flex flex-row'>
-      <Image
-        className='w-[70%]'
-        width={2500}
-        height={2500}
-        alt='Illustration App'
-        src={'/images/AuthIllustration.jpg'}
-      />
+    <div className='w-[100%] h-[100svh] bg-Brand-neutral-800 flex flex-row'>
+      <div className='w-[65%] hidden xl:w-[70%] lg:flex'>
+        <Image
+          className='w-[100%]'
+          width={2500}
+          height={2500}
+          alt='Illustration App'
+          src={'/images/AuthIllustration.jpg'}
+        />
+      </div>
+
       <div className='bg-Brand-neutral-800 flex grow items-center justify-center  overflow-hidden relative'>
         <CircleDecoration
           width='big'
@@ -51,9 +54,9 @@ export default function Home() {
           color='bg-Brand-blueM-400'
           positions='bottom'
         />
-        <section className='w-[80%] flex flex-col space-y-6 items-center justify-center '>
-          <div className='w-[100%] flex flex-col space-y-1 items-center justify-center '>
-            <div className='h-[90px] w-[60%] flex items-center justify-center'>
+        <section className='flex flex-col space-y-6 items-center justify-center w-[85%] sm:w-[70%]  md:w-[50%] lg:w-[80%]'>
+          <div className='w-[100%] sm:w-[70%] lg:w-[100%]  flex flex-col space-y-1 items-center justify-center '>
+            <div className='flex items-center justify-center h-[90px] w-[60%]'>
               <Image
                 className='w-[100%]'
                 width={0}
