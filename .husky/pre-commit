@@ -1,0 +1,9 @@
+# testing and formating changes
+echo "⭕ Test, clean, format, checking..."
+
+
+echo "✅ name Branch and, format of Commits mesages"
+echo "✅ sucess lint check"
+echo "✅ sucess Formater"
+
+echo "🚀 Good code !"
