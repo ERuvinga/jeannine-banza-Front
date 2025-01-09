@@ -20,7 +20,7 @@
 @layer base {
   @font-face {
     font-family: 'sans-semi';
-    src: url(/fonts/OpenSansemiBold.ttf);
+    src: url(/fonts/OpenSansSemiBold.ttf);
   }
 }
 
