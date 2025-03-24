@@ -1,11 +1,11 @@
 {
-  "name": "cidlabs_student_and_trainer",
+  "name": "jeannine_banza_app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "PORT=2003 next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=2003  next start",
     "lint": "next lint",
     "format-check": "prettier --check .",
     "format": "prettier --write --ignore-path .gitignore .",
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "heroicons": "^2.2.0",
-    "next": "15.1.4",
+    "next": "15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0"
