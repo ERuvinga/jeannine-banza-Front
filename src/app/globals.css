@@ -6,50 +6,49 @@
 @layer base {
   @font-face {
     font-family: 'Pop_Black';
-      src: url(/fonts/Pop_Black.ttf);
+    src: url(/fonts/Pop_Black.ttf);
   }
 }
 
 @layer base {
   @font-face {
     font-family: 'Pop_Bold';
-      src: url(/fonts/Pop_Bold.ttf);
-    }
-    }
-    
-    @layer base {
-      @font-face {
-        font-family: 'Pop_Medium';
-        src: url(/fonts/Pop_Medium.ttf);
-      }
-    }
-    
-    @layer base {
-      @font-face {
-        font-family: 'Pop_Regular';
-        src: url(/fonts/Pop_Regular.ttf);
+    src: url(/fonts/Pop_Bold.ttf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Pop_Medium';
+    src: url(/fonts/Pop_Medium.ttf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Pop_Regular';
+    src: url(/fonts/Pop_Regular.ttf);
   }
 }
 
 @layer base {
   @font-face {
     font-family: 'Pop_Light';
-      src: url(/fonts/Pop_Light.ttf);
-    }
+    src: url(/fonts/Pop_Light.ttf);
+  }
 }
-
 
 @layer base {
   @font-face {
     font-family: 'Pop_Thin';
-      src: url(/fonts/Pop_Thin.ttf);
-    }
-    }
-    
-    @layer base {
-      @font-face {
-        font-family: 'Pop_ExtraLight';
-          src: url(/fonts/Pop_ExtraLight.ttf);
+    src: url(/fonts/Pop_Thin.ttf);
+  }
+}
+
+@layer base {
+  @font-face {
+    font-family: 'Pop_ExtraLight';
+    src: url(/fonts/Pop_ExtraLight.ttf);
   }
 }
 
