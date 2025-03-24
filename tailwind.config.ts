@@ -15,7 +15,12 @@ export default {
         xl: '1200px',
       },
       fontFamily: {
-        sans: 'Opensans',
+        PopBold: 'Pop_Bold',
+        PopMedium: 'Pop_Medium',
+        PopRegular: 'Pop_Regular',
+        PopLight: 'Pop_Light',
+        PopExtraLight: 'Pop_ExtraLight',
+        PopThin: 'Pop_Thin',
       },
       colors: {
         background: 'var(--background)',
