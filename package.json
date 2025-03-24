@@ -6,7 +6,7 @@
     "dev": "PORT=2003 next dev",
     "build": "next build",
     "start": "PORT=2003  next start",
-    "lint": "next lint",
+    "lint": "next lint ./",
     "format-check": "prettier --check .",
     "format": "prettier --write --ignore-path .gitignore .",
     "lint-stag": "npx lint-staged",
